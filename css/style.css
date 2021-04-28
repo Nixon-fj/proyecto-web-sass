@@ -35,8 +35,83 @@ body {
     width: 250px;
     height: 160px;
   }
+  body .firts-titles {
+    margin: 1em 0;
+    padding: 0 1em;
+  }
   body .row {
+    margin: 0;
     padding: 0 3em;
+  }
+  body .col {
+    margin: 0.5em;
+    padding: 0;
+  }
+  body .logo {
+    position: absolute;
+    top: 1em;
+    left: 4em;
+    font-size: 18px;
+  }
+  body .color-logo {
+    font-size: 18px;
+  }
+  body .icons-lite {
+    width: 30px;
+    padding: 2em 0;
+  }
+  body .top-nav {
+    padding: 0 3em;
+  }
+  body .nav {
+    position: absolute;
+    top: 0em;
+    left: -25em;
+    margin: 0;
+    padding: 2em 3em;
+    width: 100%;
+    height: 100%;
+    background: #353f46;
+    z-index: 2;
+    display: block;
+    transition: 0.5s;
+  }
+  body .btn-top {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  body .btn-top :hover {
+    border: none;
+  }
+  body .close-menu {
+    display: inline;
+    float: right;
+    font-size: 30px;
+  }
+  body .mob-menu {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    display: inline;
+    font-size: 35px;
+  }
+  body .nav-portfolio {
+    padding: 0 0em;
+  }
+  body .icons {
+    font-size: 10px;
+    padding: 1em;
+  }
+  body .input-text {
+    padding: 0.7em;
+    margin: 0.5em 0;
+  }
+  body .footer-nav {
+    width: 100%;
+  }
+  body .footer-btn {
+    font-size: 11px;
   }
 }
 
@@ -45,17 +120,95 @@ body {
   height: auto;
   padding: 0 10em;
 }
+@media only screen and (max-width: 480px) {
+  .row .video {
+    width: 250px;
+    height: 160px;
+  }
+  .row .firts-titles {
+    margin: 1em 0;
+    padding: 0 1em;
+  }
+  .row .row {
+    margin: 0;
+    padding: 0 3em;
+  }
+  .row .col {
+    margin: 0.5em;
+    padding: 0;
+  }
+  .row .logo {
+    position: absolute;
+    top: 1em;
+    left: 4em;
+    font-size: 18px;
+  }
+  .row .color-logo {
+    font-size: 18px;
+  }
+  .row .icons-lite {
+    width: 30px;
+    padding: 2em 0;
+  }
+  .row .top-nav {
+    padding: 0 3em;
+  }
+  .row .nav {
+    position: absolute;
+    top: 0em;
+    left: -25em;
+    margin: 0;
+    padding: 2em 3em;
+    width: 100%;
+    height: 100%;
+    background: #353f46;
+    z-index: 2;
+    display: block;
+    transition: 0.5s;
+  }
+  .row .btn-top {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  .row .btn-top :hover {
+    border: none;
+  }
+  .row .close-menu {
+    display: inline;
+    float: right;
+    font-size: 30px;
+  }
+  .row .mob-menu {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    display: inline;
+    font-size: 35px;
+  }
+  .row .nav-portfolio {
+    padding: 0 0em;
+  }
+  .row .icons {
+    font-size: 10px;
+    padding: 1em;
+  }
+  .row .input-text {
+    padding: 0.7em;
+    margin: 0.5em 0;
+  }
+  .row .footer-nav {
+    width: 100%;
+  }
+  .row .footer-btn {
+    font-size: 11px;
+  }
+}
 
 .col {
   margin: 0.5em;
   display: inline-block;
   padding: 0;
-}
-
-.col-md-5 {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
 }
 
 .col-md-7 {
@@ -77,10 +230,12 @@ body {
   background: #353f46;
   opacity: 90%;
   margin: 0 0 5em 0;
-  padding: 1em 0;
+  padding: 1em 10em;
 }
 
 .logo {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   font-family: "NotoBold";
   font-size: 30px;
@@ -92,6 +247,8 @@ body {
 }
 
 .color-logo {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   font-family: "NotoBold";
   font-size: 30px;
@@ -102,6 +259,20 @@ body {
   color: #fff;
 }
 
+.nav {
+  margin: 0;
+  padding: 0.5em 0;
+  float: right;
+}
+
+.close-menu {
+  display: none;
+}
+
+.mob-menu {
+  display: none;
+}
+
 .btn-top {
   font-family: "NotoBold";
   font-size: 14px;
@@ -109,15 +280,100 @@ body {
   text-decoration: none;
   color: #fff;
   padding: 0.5em 1em;
+  margin: 0 0.5em;
 }
 .btn-top:hover {
-  border: 5px solid #4bcaff;
+  border: 3px solid #4bcaff;
   color: #4bcaff;
 }
 
 .firts-titles {
   margin: 10em 0;
   padding: 0 25em;
+}
+@media only screen and (max-width: 480px) {
+  .firts-titles .video {
+    width: 250px;
+    height: 160px;
+  }
+  .firts-titles .firts-titles {
+    margin: 1em 0;
+    padding: 0 1em;
+  }
+  .firts-titles .row {
+    margin: 0;
+    padding: 0 3em;
+  }
+  .firts-titles .col {
+    margin: 0.5em;
+    padding: 0;
+  }
+  .firts-titles .logo {
+    position: absolute;
+    top: 1em;
+    left: 4em;
+    font-size: 18px;
+  }
+  .firts-titles .color-logo {
+    font-size: 18px;
+  }
+  .firts-titles .icons-lite {
+    width: 30px;
+    padding: 2em 0;
+  }
+  .firts-titles .top-nav {
+    padding: 0 3em;
+  }
+  .firts-titles .nav {
+    position: absolute;
+    top: 0em;
+    left: -25em;
+    margin: 0;
+    padding: 2em 3em;
+    width: 100%;
+    height: 100%;
+    background: #353f46;
+    z-index: 2;
+    display: block;
+    transition: 0.5s;
+  }
+  .firts-titles .btn-top {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+  .firts-titles .btn-top :hover {
+    border: none;
+  }
+  .firts-titles .close-menu {
+    display: inline;
+    float: right;
+    font-size: 30px;
+  }
+  .firts-titles .mob-menu {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    display: inline;
+    font-size: 35px;
+  }
+  .firts-titles .nav-portfolio {
+    padding: 0 0em;
+  }
+  .firts-titles .icons {
+    font-size: 10px;
+    padding: 1em;
+  }
+  .firts-titles .input-text {
+    padding: 0.7em;
+    margin: 0.5em 0;
+  }
+  .firts-titles .footer-nav {
+    width: 100%;
+  }
+  .firts-titles .footer-btn {
+    font-size: 11px;
+  }
 }
 
 .header-titles {
@@ -161,7 +417,7 @@ body {
 .text {
   margin: 0.5 0;
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -181,15 +437,15 @@ body {
   text-align: center;
   text-decoration: none;
   color: #353f46;
-  padding: 0.3em;
+  padding: 0 0.5em;
 }
 .btn-portfolio:hover {
-  border: 5px solid #4bcaff;
+  border: 3px solid #4bcaff;
   color: #4bcaff;
 }
 
 .container-media {
-  background: rgba(53, 63, 70, 0.7);
+  background: #353f46;
   width: 100%;
   height: auto;
   margin: 0;
@@ -207,7 +463,7 @@ body {
   color: #353f46;
 }
 .btn-media:hover {
-  border: 5px solid #4bcaff;
+  border: 3px solid #4bcaff;
   color: #4bcaff;
 }
 
@@ -232,6 +488,13 @@ body {
   padding: 2em 0;
 }
 
+.icons-lite {
+  width: 40px;
+  height: auto;
+  margin: 0;
+  padding: 1em 0;
+}
+
 .icons {
   border: 3px solid #fff;
   text-align: center;
@@ -249,13 +512,13 @@ body {
 .black-text {
   color: #353f46;
   font-family: "NotoLight";
-  font-size: 28px;
+  font-size: 14px;
 }
 
 .witness-name {
   color: #4bcaff;
   font-family: "NotoRegular";
-  font-size: 28px;
+  font-size: 12px;
 }
 
 .container-contact {
@@ -269,9 +532,10 @@ body {
 
 .input-text {
   margin: 0;
-  padding: 0;
+  padding: 0.5em;
   height: auto;
-  color: #353f46;
+  border: 1px solid #fff;
+  background: no-repeat;
 }
 
 .btn-msj {
@@ -284,4 +548,29 @@ body {
   margin: 1.5em 0;
   padding: 1em;
   max-width: 18em;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: #353f46;
+  padding: 1em 0;
+}
+
+.footer-nav {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+.footer-btn {
+  color: black;
+  padding: 0.2em 0.5em;
+  font-family: "NotoBold";
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+.footer-btn:hover {
+  color: #4bcaff;
 }

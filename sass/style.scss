@@ -8,6 +8,7 @@ body{
     font-family: 'NotoRegular';
 }
 .row{
+    @include respond-to($phone);
     width: 100%;
     height: auto;
     padding: 0 10em;
@@ -16,11 +17,6 @@ body{
     margin: 0.5em;
     display: inline-block;
     padding: 0;
-}
-.col-md-5{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
 }
 .col-md-7{
     margin: 0;
@@ -34,15 +30,18 @@ body{
     margin: 0;
     background-image: url(../imgs/header.jpg);
 }
+
 .top-nav{
     width: 100%;
     height: 70px;
     background: $dark-bg;
     opacity: 90%;
     margin: 0 0 5em 0;
-    padding: 1em 0;
+    padding: 1em 10em;
 }
 @mixin logo-style(){
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     font-family: 'NotoBold';
     font-size: 30px;
@@ -58,6 +57,18 @@ body{
 .color-logo{
     @include logo-style();
     color: $light-blue;
+
+}
+.nav{
+    margin: 0;
+    padding: 0.5em 0;
+    float: right;
+}
+.close-menu{
+    display: none;
+}
+.mob-menu{
+    display: none;
 }
 @mixin btn {
     font-family: 'NotoBold';
@@ -65,7 +76,7 @@ body{
     text-align: center;
     text-decoration: none;
     &:hover{
-        border: 5px solid $light-blue;
+        border: 3px solid $light-blue;
         color: $light-blue;
     }
 }
@@ -73,8 +84,10 @@ body{
     @include btn();
     color: $white-copy;
     padding: 0.5em 1em;
+    margin: 0 0.5em
 }
 .firts-titles{
+    @include respond-to($phone);
     margin: 10em 0;
     padding: 0 25em;
 }
@@ -116,7 +129,7 @@ body{
 .text{
     margin: 0.5 0;
     color: $white-copy;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
 }
 //portfolio
@@ -131,11 +144,11 @@ body{
 .btn-portfolio{
     @include btn();
     color: $dark-bg;
-    padding: 0.3em;
+    padding: 0 0.5em;
 }
 //media
 .container-media{
-    background: $nav-bg;
+    background: $dark-bg;
     width: 100%;
     height: auto;
     margin: 0;
@@ -171,6 +184,12 @@ body{
     margin: 0;
     padding: 2em 0;
 }
+.icons-lite{
+    width: 40px;
+    height: auto;
+    margin: 0;
+    padding: 1em 0;
+}
 .icons{
     border: 3px solid $white-copy;
     text-align: center;
@@ -187,12 +206,12 @@ body{
 .black-text{
     color: $dark-bg;
     font-family: 'NotoLight';
-    font-size: 28px;
+    font-size: 14px;
 }
 .witness-name{
     color: $light-blue;
     font-family: 'NotoRegular';
-    font-size: 28px;
+    font-size: 12px;
 }
 //contact
 .container-contact{
@@ -205,9 +224,10 @@ body{
 }
 .input-text{
     margin: 0;
-    padding: 0;
+    padding: 0.5em;
     height: auto;
-    color: $dark-bg;
+    border: 1px solid #fff;
+    background: no-repeat;
 }
 .btn-msj{
     background: $light-blue;
@@ -219,4 +239,26 @@ body{
     margin: 1.5em 0;
     padding: 1em;
     max-width: 18em;
+}
+footer{
+    width: 100%;
+    height: auto;
+    background: $dark-bg;
+    padding: 1em 0;
+}
+.footer-nav{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+.footer-btn{
+    color: black;
+    padding: 0.2em 0.5em;
+    font-family: 'NotoBold';
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+        color: $light-blue;
+    }
 }
